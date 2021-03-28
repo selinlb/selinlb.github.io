@@ -1,15 +1,49 @@
-body{
-    background-color: beige;
+body {
+    background-image: url("https://sm.mashable.com/t/mashable_in/photo/default/nasa-galaxy_9pu4.960.jpg");
 }
 
-h2{
-    text-align: center;
-    color:darkkhaki;
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 120px;
+    font-family: monospace;
+    color: darkgoldenrod;
+    font-size: 27px;
 }
-div{
-    border: 2px solid powderblue;
-    text-align: left;
-    padding: 3%;
-    margin: 10% 30%;
-    background-color:antiquewhite;
+
+section{
+    display:flex;
+    flex-direction:row;
+    justify-content: center;
+    height:450px;    
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    font-family: monospace;
+    width: 40%;
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 60px;
+}
+
+article {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    padding: 15px;
+    text-align: justify;
+    font-family: monospace;
+    color: darkgoldenrod;
+
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: monospace;
+    color: darkgoldenrod;
 }
