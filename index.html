@@ -21,18 +21,19 @@
     
     <script>
         
-        /*document.getElementById("nav").addEventListener("mouseover", myFunction);
-        document.getElementById("nav").addEventListener("mouseout", mySecondFunction);
+        /*document.getElementsByClassName("nav").addEventListener("mouseover", mouseOver);
+        document.getElementsByClassName("nav").addEventListener("mouseout", mouseOut);
         
-        function myFunction(){
-            document.getElementById("nav").style.backgroundColor="rgba(255, 255, 255, 0.1)";
+        function mouseOver(){
+            document.getElementsByClassName("nav").style.backgroundColor="rgba(255, 255, 255, 0.1)";
         }
         
-        function mySecondFunction(){
-            document.getElementById("nav").style.backgroundColor="rgba(255, 255, 255, 0.3)";
+        function mouseOut(){
+            document.getElementsByClassName("nav").style.backgroundColor="rgba(255, 255, 255, 0.3)";
         }*/
         
         function myFunction1(){
+            
             document.body.style.backgroundImage = "url('https://www.nasa.gov/sites/default/files/thumbnails/image/c4.jpg')";
             document.body.style.backgroundRepeat= "no-repeat";
             document.body.style.backgroundSize= "cover";
@@ -44,13 +45,13 @@
 
         function myFunction2(){
 
-            document.body.style.backgroundImage = "url('https://sm.mashable.com/t/mashable_in/photo/default/nasa-galaxy_9pu4.960.jpg')";
+            document.body.style.backgroundImage = "url('https://www.nasa.gov/sites/default/files/images/554241main_pia11667_full.jpg')";
             document.body.style.backgroundRepeat= "no-repeat";
             document.body.style.backgroundSize= "cover";
-            document.getElementById("header").style.color="darkgoldenrod";
-            document.getElementById("article").style.color="darkgoldenrod";
-            document.getElementById("footer").style.color="darkgoldenrod";
-            document.getElementById("button").style.backgroundColor="darkgoldenrod";
+            document.getElementById("header").style.color="coral";
+            document.getElementById("article").style.color="coral";
+            document.getElementById("footer").style.color="coral";
+            document.getElementById("button").style.backgroundColor="coral";
 
         }
             
@@ -67,7 +68,7 @@
     </header>    
 
     <section>
-        <nav id="nav">
+        <nav class="nav">
             <h1>GEZEGENLER HAKKINDA BİLGİLENDİRME BÖLÜMÜ</h1>
         </nav>
 
@@ -75,7 +76,7 @@
             <h3>Uzay ve gezegenler senin de dikkatini çekiyorsa doğru websitesindesin. Bu websitesi sayesinde gezegenler hakkında birçok bilgi öğrenebilirsin. Ayrıca simülasyon bölümünde istediğin gezegen üzerinde simülasyon işlemini başlatarak bir cismin seçilen gezegen üzerinde kaç saniye içinde yere düşebileceğini öğrenebileceksin. </h3>
         </article>
 
-        <nav id="nav">
+        <nav class="nav">
             <h1>GEZEGENLER SİMÜLASYONUNA GİRİŞ BÖLÜMÜ</h1>
         </nav>
 
