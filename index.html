@@ -2,15 +2,16 @@
 <html lang="tr">
 
 <head>
-    <title>Virgo Supercluster</title>
+    <title>Başak Süper Kümesi</title>
     <link href="style.css" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Yatra+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKZB29JN0D"></script>
+    <script src="script.js"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
@@ -19,74 +20,40 @@
         gtag('config', 'G-EKZB29JN0D');
     </script>
     
-    <script>
-        
-        /*document.getElementsByClassName("nav").addEventListener("mouseover", mouseOver);
-        document.getElementsByClassName("nav").addEventListener("mouseout", mouseOut);
-        
-        function mouseOver(){
-            document.getElementsByClassName("nav").style.backgroundColor="rgba(255, 255, 255, 0.1)";
-        }
-        
-        function mouseOut(){
-            document.getElementsByClassName("nav").style.backgroundColor="rgba(255, 255, 255, 0.3)";
-        }*/
-        
-        function myFunction1(){
-            
-            document.body.style.backgroundImage = "url('https://www.nasa.gov/sites/default/files/thumbnails/image/c4.jpg')";
-            document.body.style.backgroundRepeat= "no-repeat";
-            document.body.style.backgroundSize= "cover";
-            document.getElementById("header").style.color="bisque";
-            document.getElementById("article").style.color="bisque";
-            document.getElementById("footer").style.color="bisque";
-            document.getElementById("button").style.backgroundColor="bisque";
-        }
-
-        function myFunction2(){
-
-            document.body.style.backgroundImage = "url('https://www.nasa.gov/sites/default/files/images/554241main_pia11667_full.jpg')";
-            document.body.style.backgroundRepeat= "no-repeat";
-            document.body.style.backgroundSize= "cover";
-            document.getElementById("header").style.color="coral";
-            document.getElementById("article").style.color="coral";
-            document.getElementById("footer").style.color="coral";
-            document.getElementById("button").style.backgroundColor="coral";
-
-        }
-            
-        
-</script>
-    
 </head>
 
 <body>
    
-    <button id="button" onclick="myFunction1()", ondblclick="myFunction2()">Arkaplanı değiştir</button>
-    <header id="header">
-        <h2>SPACE SIMULATION</h2>
-    </header>    
-
-    <section>
-        <nav class="nav">
-            <h1>GEZEGENLER HAKKINDA BİLGİLENDİRME BÖLÜMÜ</h1>
-        </nav>
-
-        <article id="article">
-            <h3>Uzay ve gezegenler senin de dikkatini çekiyorsa doğru websitesindesin. Bu websitesi sayesinde gezegenler hakkında birçok bilgi öğrenebilirsin. Ayrıca simülasyon bölümünde istediğin gezegen üzerinde simülasyon işlemini başlatarak bir cismin seçilen gezegen üzerinde kaç saniye içinde yere düşebileceğini öğrenebileceksin. </h3>
-        </article>
-
-        <nav class="nav">
-            <h1>GEZEGENLER SİMÜLASYONUNA GİRİŞ BÖLÜMÜ</h1>
-        </nav>
-
-    </section>
-
-    <footer id="footer">
-       <h3>NASA</h3>
-    </footer>
-
-
+   <div class="topnav">
+        <a class="active" href="index.html">Anasayfa</a>
+        <a href="projemiz.html">Projemiz</a>
+        <a href="hakkimizda.html">Hakkımızda</a>
+        <a href="#footer-canvas">İletişim</a>
+   </div>
+   
+    <div id="absolute-canvas">
+        <div id="nav-container">
+            <h1>UZAY<br>SİMÜLASYONU</h1>
+            <p>Seçiniz</p>
+          
+            <a onmouseover="fonk1()" onmouseout="normal()" onclick="alertfonk()" title="Dünya" href="#" id='deg0'><img src="3earth.jpg" alt="dünya" style="border-radius: 100%"></a>
+            <a onmouseover="fonk2()" onmouseout="normal()" onclick="alertfonk()" title="Mars" href="#" id='deg45'><img src="4mars.jpg" alt="mars" style="border-radius: 100%"></a>
+            <a onmouseover="fonk3()" onmouseout="normal()" onclick="alertfonk()" title="Jüpiter" href="#" id='deg90'><img src="5jupiter.png" alt="jüpiter" style="border-radius: 100%"></a>
+            <a onmouseover="fonk4()" onmouseout="normal()" onclick="alertfonk()" title="Satürn" href="#" id='deg135'><img src="6saturn.jpg" alt="satürn" style="border-radius: 100%"></a>
+            <a onmouseover="fonk5()" onmouseout="normal()" onclick="alertfonk()" title="Uranüs" href="#" id='deg180'><img src="7uranus.jpg" alt="uranüs" style="border-radius: 100%"></a>
+            <a onmouseover="fonk6()" onmouseout="normal()" onclick="alertfonk()" title="Neptün" href="#" id='deg225'><img src="8neptune.jpg" alt="neptün" style="border-radius: 100%"></a>
+            <a onmouseover="fonk7()" onmouseout="normal()" onclick="alertfonk()" title="Merkür" href="#" id='deg270'><img src="1mercury.jpg" alt="merkür" style="border-radius: 100%"></a>
+            <a onmouseover="fonk8()" onmouseout="normal()" onclick="alertfonk()" title="Venüs" href="#" id='deg315'><img src="2venus.jpg" alt="venüs" style="border-radius: 100%"></a>
+        </div>
+        
+        <div id="footer-canvas">
+            <p>İletişim</p>
+        </div>
+        
+        <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    </div>
+    
 </body>
 
 </html>
+
