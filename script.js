@@ -67,7 +67,7 @@ function normal() { //mouse şeklin üzerinden çekildiğinde çağrılacak fonk
 }
 //gezegenler üzerine tıklandığında çağrılan fonksiyon. Bu fonksiyon linkin henüz aktif olmadığını kullanıcıya bildiren bir alert görüntüler
 function alertfonk() {
-    alert("Çok yakýnda buradayýz!");
+    alert("Çok yakında buradayız!");
 }
 
 
