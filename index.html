@@ -2,18 +2,17 @@
 <html lang="tr">
 
 <head>
-    <title>Başak Süper Kümesi</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
-    <link href="style.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
-    <meta charset="utf-8">
+    <title>Başak Süper Kümesi</title> <!--web sayfasının adı -->
+    <link href="style.css" rel="stylesheet" /> <!--html sayfası için yazılmış css sayfası bağlanır -->
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet"> <!-- yazılar için kullanılmış google font linki -->
+    <meta charset="utf-8"> <!--Türkçe karakterler için tanımlanmış satır -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <!-- global site etiketi (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-EKZB29JN0D"></script>
     
-    <script>
+    <script> 
         window.dataLayer = window.dataLayer || [];
 
         function gtag() {
@@ -28,19 +27,22 @@
 </head>
 
 <body>
-
-    <div class="topnav">
+    
+    <!--web sayfasının sol üst kısmında yer alan ve html sayfaları arasında geçiş yapmamızı sağlayan bölüm-->
+    <div class="topnav"> 
         <a class="active" href="index.html">Anasayfa</a>
         <a href="projemiz.html">Projemiz</a>
         <a href="hakkimizda.html">Hakkımızda</a>
         <a href="#footer-canvas">İletişim</a>
     </div>
 
+    <!-- web sayfasının orta kısmında 8 tane gezegenin halka şeklinde dizilmesini sağlayan bölüm -->
     <div id="absolute-canvas">
         <div id="nav-container">
-            <h1>UZAY<br>SİMÜLASYONU</h1>
+            <h1>UZAY<br>SİMÜLASYONU</h1> <!--gezegen halkasının orta kısmında yer alan başlık kısmı-->
             <p>Seçiniz</p>
-
+           
+            <!--gezegenler üzerinde mouse ile işlem yapmamızı sağlayan script fonksiyonlarının çağırıldığı bölüm-->
             <a onmouseover="fonk1()" onmouseout="normal()" onclick="alertfonk()" title="Dünya" href="#" id='deg0'><img src="3earth.jpg" alt="dünya" style="border-radius: 100%"></a>
             <a onmouseover="fonk2()" onmouseout="normal()" onclick="alertfonk()" title="Mars" href="#" id='deg45'><img src="4mars.jpg" alt="mars" style="border-radius: 100%"></a>
             <a onmouseover="fonk3()" onmouseout="normal()" onclick="alertfonk()" title="Jüpiter" href="#" id='deg90'><img src="5jupiter.png" alt="jüpiter" style="border-radius: 100%"></a>
@@ -52,15 +54,13 @@
         </div>
 
         <div id="footer-canvas">
-            <p>İletişim</p>
+            <p>İletişim</p> <!-- web sitesi için iletişim bilgilerinin yer alacağı bölüm -->
         </div>
 
-        <button onclick="topFunction()" id="myBtn" title="Başa dön">Top</button>
+        <button onclick="topFunction()" id="myBtn" title="Başa dön">Top</button> <!--sayfa iinde alt kısımlara indikçe karşımıza çıkacak olan buton. Bu buton ile sayfanın en üst kısmına geçiş yapabiliriz -->
     </div>
 
-    <script src="script.js"></script>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+    <script src="script.js"></script> <!-- script fonksiyonlarının bulunduğu sayfayı html sayfasına bağlayan kısım  -->
 </body>
 
 </html>
