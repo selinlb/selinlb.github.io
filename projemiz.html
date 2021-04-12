@@ -2,34 +2,35 @@
 <html lang="tr">
 
 <head>
-    <title>Projemiz</title>
-    <link href="style.css" rel="stylesheet" />
+    <title>Projemiz</title> <!--web sayfasının adı -->
+    <link href="style.css" rel="stylesheet" /> <!-- html sayfasını css sayfasına bağlayan kod parçacığı -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet"> <!-- yazılar için kullanılmış google font linki -->
+    
+    <!-- proje hakkında bilgilendirme yapılan bölümün sayfa tasarımının yapıldığı kısım-->
     <style>
         #div-container {
-            height: 500px;
-            width: 500px;
-            position: absolute;
-            top: 25%;
-            left: 30%;
+            height: 500px; /* yükseklik belirlenir*/
+            width: 500px; /* genişlik belirlenir*/
+            position: absolute; /*ilk konumlanan öğeye göre diğer öğelerin konumlandırılması sağlanır*/
+            top: 25%; /* üst boşluk*/
+            left: 30%;/* sol boşluk*/
         }
 
         p {
-            text-align: justify;
-            font-size: 25px;
-            font-family: 'Crimson Pro', serif;
-            color: mistyrose;
+            text-align: justify;/* çizgiler, her satırın eşit genişliğe sahip olması için uzatılır*/
+            font-size: 25px;  /* yazıların büyüklüğü*/
+            font-family: 'Crimson Pro', serif;/* yazılar için kullanılan google font*/
+            color: mistyrose; /* yazı rengi*/ 
         }
 
         h1 {
-            text-align: center;
-            font-size: 37px;
-            font-family: 'Crimson Pro', serif;
-            color: rgb(138, 181, 179);
+            text-align: center; /* merkezi metin hizalaması yapılır*/
+            font-size: 37px;  /* yazıların büyüklüğü*/
+            font-family: 'Crimson Pro', serif; /* yazılar için kullanılan google font*/
+            color: rgb(138, 181, 179); /* yazı rengi*/
         }
 
     </style>
@@ -37,7 +38,8 @@
 </head>
 
 <body>
-
+    
+    <!--web sayfasının sol üst kısmında yer alan ve html sayfaları arasında geçiş yapmamızı sağlayan bölüm-->
     <div class="topnav">
         <a class="active" href="index.html">Anasayfa</a>
         <a href="projemiz.html">Projemiz</a>
@@ -45,6 +47,7 @@
         <a href="#footer-canvas">İletişim</a>
     </div>
 
+       <!--projemiz hakkında bilgilendirme yapılan bölüm-->
     <div id="div-container">
 
         <h1> PROJEMİZ HAKKINDA BİLGİLENDİRME</h1>
@@ -53,12 +56,12 @@
     </div>
 
     <div id="footer-canvas">
-        <p>İletişim</p>
+        <p>İletişim</p>  <!-- web sitesi için iletişim bilgilerinin yer alacağı bölüm -->
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> <!--sayfa iinde alt kısımlara indikçe karşımıza çıkacak olan buton. Bu buton ile sayfanın en üst kısmına geçiş yapabiliriz -->
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- javascript fonksiyonlarını kullanmak için html sayfasının Jscript sayfasına bağlandığı kısım -->
 
 </body>
 
