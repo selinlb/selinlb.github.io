@@ -1,118 +1,130 @@
 * {
-    box-sizing: border-box;
+    box-sizing: border-box; /* dolgu ve kenarlık genişlik ve yüksekliğe dahil edilerek, öğe üzerinde boyut ayarlaması yapılır*/
 }
 
 html {
-    scroll-behavior: smooth;
+    scroll-behavior: smooth; /*site içinde kaydırma işlemi yapmamızı sağlar*/
 }
 
 body {
-    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/c4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-image: url("https://www.nasa.gov/sites/default/files/thumbnails/image/c4.jpg"); /*sitenin arkaplan resmi*/
+    background-repeat: no-repeat; /*arkaplan resminin tekrarını önler*/
+    background-size: cover; /* arka plan resminin, kesilmesi veya uzatılması gerektiğinde tekrardan boyutlandırılmasını sağlar*/
 }
 
+/* html sayfaları arasında geçiş yapmamızı sağlayan buton için genel tasarım*/
 .topnav {
-    background-color: rgb(138, 181, 179);
-    overflow: hidden;
-    float: right;
-    width: 420px;
+    background-color: rgb(138, 181, 179); /* arkaplan rengi*/
+    overflow: hidden; /*taşma kırpılır geri kalan yer görünmez*/
+    float: right; /*sağa yaslı görünüm*/
+    width: 420px; /*genişlik*/
 }
 
-
+/* html sayfaları arasında geçiş yapmamızı sağlayan butonda herbir link için görünüm*/
 .topnav a {
-    float: left;
-    padding: 14px 16px;
-    font-size: 20px;
-    text-decoration: none;
-    font-family: 'Crimson Pro', serif;
-    color: #f2f2f2;
-    text-align: center;
+    float: left; /*sola yaslı görünüm*/
+    padding: 14px 16px;/*üst ve alt dolgu 14px  sağ ve sol dolgu 16px  bu dolgular öğe içinde boşluk oluşturmamızı sağlar*/
+    font-size: 20px;/*font büyüklüğü*/
+    text-decoration: none;/*metin süsü yok*/
+    font-family: 'Crimson Pro', serif;/*yazılar için kullanılan google font*/
+    color: #f2f2f2;/*font(yazı) rengi*/
+    text-align: center; /* merkezi metin hizalaması yapılır*/
 }
 
-
+/* html sayfaları arasında geçiş yapmamızı sağlayan butonda mouse ile herbir linkin üzerine geldiğimizde oluşacak arkaplan rengi ve yazı rengi tasarımı yapılır*/
 .topnav a:hover {
-    background-color: aliceblue;
-    color: black;
+    background-color: aliceblue; /* arkaplan rengi*/
+    color: black; /* font(yazı) rengi*/
 }
 
-
+/* html sayfaları arasında geçiş yapmamızı sağlayan butonda mouse ile herbir linkin üzerine tıkladığımızda oluşacak arkaplan rengi ve yazı rengi tasarımı yapılır*/
 .topnav a.active {
-    background-color: cadetblue;
-    color: white;
+    background-color: cadetblue; /* arkaplan rengi*/
+    color: white; /* font(yazı) rengi*/
 }
 
+
+/* gezegenlerin web sayfasındaki görünümleri için yapılan tasarım*/
 #absolute-canvas a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Crimson Pro', serif;
-    font-size: 20px;
-    color: palegreen;
+    display: flex;  /* öğenin blok düzeyinde esnek kapsayıcı olarak görünmesini sağlar*/
+    justify-content: center; /* öğeler, ayrlılan alanın ortasına yerleştirilir*/
+    align-items: center;/* tüm öğeleri ortalı olarak hizalar*/
+    font-family: 'Crimson Pro', serif;/*yazılar için kullanılan google font*/
+    font-size: 20px;/*font büyüklüğü*/
+    color: palegreen; /* font(yazı) rengi*/
     text-decoration: none;
-    position: absolute;
-    top: 48%;
-    left: 46%;
-    width: 100px;
-    height: 100px;
-    border-radius: 100%;
+    position: absolute; /*ilk konumlanan öğeye göre diğer öğelerin konumlandırılması sağlanır*/
+    top: 48%; /* üst boşluk*/ 
+    left: 46%; /* sol boşluk*/
+    width: 100px; /* genişlik belirlenir*/
+    height: 100px; /* yükseklik belirlenir*/
+    border-radius: 100%; /*şeklin(gezegenlerin) tam daire şeklinde olmasını sağlar*/
 }
 
+
+/* gezegenlerin ortasında yer alan büyük başlık için yapılan tasarım*/
 #absolute-canvas h1 {
-    position: absolute;
+    position: absolute;/*ilk konumlanan öğeye göre diğer öğelerin konumlandırılması sağlanır*/
     color: lightblue;
     font-family: 'Crimson Pro', serif;
-    text-align: center;
-    margin-top: 20%;
-    margin-bottom: 50%;
-    margin-right: 50%;
-    margin-left: 41%;
-    font-size: 37px;
+    text-align: center; /* merkezi metin hizalaması yapılır*/
+    margin-top: 20%; /* üst kenar boşluğu*/
+    margin-bottom: 50%;/* alt kenar boşluğu*/
+    margin-right: 50%;/* sağ kenar boşluğu*/
+    margin-left: 41%; /* sol kenar boşluğu*/
+    font-size: 37px; /* font büyüklüğü */
 }
 
+/* gezegenlerin ortasında yer alan alt başlık için yapılan tasarım*/
 #absolute-canvas p {
-    position: absolute;
+    position: absolute; /*ilk konumlanan öğeye göre diğer öğelerin konumlandırılması sağlanır*/
     color: mistyrose;
     font-family: 'Crimson Pro', serif;
-    text-align: center;
-    margin-top: 27%;
-    margin-bottom: 50%;
-    margin-right: 50%;
-    margin-left: 47%;
-    font-size: 25px;
+    text-align: center; /* merkezi metin hizalaması yapılır*/
+    margin-top: 27%; /* üst kenar boşluğu*/
+    margin-bottom: 50%; /* sağ kenar boşluğu*/
+    margin-right: 50%; /* sağ kenar boşluğu*/
+    margin-left: 47%; /* sol kenar boşluğu*/
+    font-size: 25px;/* font büyüklüğü */
 }
 
+/* iletişim yazısı için yapılan tasarım*/
 #footer-canvas {
-    position: absolute;
-    top: 110%;
-    left: 40%;
+    position: absolute; /*ilk konumlanan öğeye göre diğer öğelerin konumlandırılması sağlanır*/
+    top: 110%; /*üst boşluk*/
+    left: 40%; /*sol boşluk*/
     width: 200px;
     height: 300px;
     color: mistyrose;
     font-family: 'Crimson Pro', serif;
     font-size: 25px;
-    text-align: center;
+    text-align: center; /* merkezi metin hizalaması yapılır*/
 }
 
+/* sayfa içinde alta indikçe karşımıza çıkan buton için yapılan tasarım*/
 #myBtn {
-    display: none;
-    position: fixed;
-    bottom: 20px;
-    right: 30px;
+    display: none; /*öğe tamamen kaldırılır*/
+    position: fixed;/* Öğe, tarayıcı penceresine göre konumlandırılmıştır */
+    bottom: 20px; /*alt boşluk*/
+    right: 30px; /* sağ boşluk*/
     font-size: 18px;
-    border: none;
-    outline: none;
+    border: none; /*butonu temsil eden şekil için çerçeve kaldırılır*/
+    outline: none;/*butonu temsil eden şekil içn anahat kaldırılır*/
     background-color: cadetblue;
     color: white;
     cursor: pointer;
-    padding: 10px;
-    border-radius: 20%;
+    padding: 10px;/*sağ sol üst alt tüm öğe içi boşluk 10px*/
+    border-radius: 20%; /* şeklin yuvarlaklık oranı*/
 }
 
+/* mouse ile buton üzerine geldiğimizde oluşacak renk ve arkaplan için yapılan tasarım*/
 #myBtn:hover {
     background-color: aliceblue;
     color: black;
 }
+
+
+/* gezegenlerin sayfa ortasında çember şeklinde konumlanmaları için belirlenen dönüş dereceleri*/
 
 #deg0 {
     transform: rotate(0deg) translate(220px) rotate(-0deg);
