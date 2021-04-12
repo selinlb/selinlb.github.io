@@ -2,31 +2,32 @@
 <html lang="tr">
 
 <head>
-    <title>Projemiz</title>
-    <link href="style.css" rel="stylesheet" />
-    <meta charset="utf-8">
+    <title>Hakkımızda</title> <!--web sayfasının adı -->
+    <link href="style.css" rel="stylesheet" /> <!-- html sayfasını css sayfasına bağlayan kod parçacığı -->
+    <meta charset="utf-8"> <!--Türkçe karakterler için tanımlanmış satır -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Pro:wght@200&display=swap" rel="stylesheet"> <!-- yazılar için kullanılmış google font linki -->
+    
+    <!-- öğrenciler hakkında bilgilendirme yapılan bölümün sayfa tasarımının yapıldığı kısım-->
     <style>
         #container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-direction: row;
-            position: absolute;
-            top: 15%;
-            left: 8%;
+            display: flex; /* öğenin blok düzeyinde esnek kapsayıcı olarak görünmesini sağlar*/
+            justify-content: center; /* öğeler, ayrlılan alanın ortasına yerleştirilir*/
+            align-items: center; /* tüm öğeleri ortalı olarak hizalar*/
+            flex-direction: row;/* esnek olarak tanımlanan öğelerin bir satır olarak yatay eksende yerleşmesini sağlar*/
+            position: absolute; /*ilk konumlanan öğeye göre diğer öğelerin konumlandırılması sağlanır*/
+            top: 15%; /* üst boşluk*/
+            left: 8%; /* sol boşluk*/
         }
 
         .hakkimizda {
-            display: inline-block;
-            width: 200px;
-            height: 400px;
-            margin: 40px;
-            font-family: 'Crimson Pro', serif;
-            font-size: 20px;
+            display: inline-block; /* öğenin kendisi bir satır içi düzey olarak belirlenir.*/
+            width: 200px; /* genişlik belirlenir*/
+            height: 400px; /* yükseklik belirlenir*/
+            margin: 40px;  /* 4 kenar boşluğunun tümü 40px*/
+            font-family: 'Crimson Pro', serif; /* yazılar için kullanılan font*/
+            font-size: 20px;  /* yazıların büyüklüğü*/
         }
 
     </style>
@@ -35,6 +36,7 @@
 
 <body>
 
+    <!--web sayfasının sol üst kısmında yer alan ve html sayfaları arasında geçiş yapmamızı sağlayan bölüm-->
     <div class="topnav">
         <a class="active" href="index.html">Anasayfa</a>
         <a href="projemiz.html">Projemiz</a>
@@ -82,12 +84,12 @@
     </div>
 
     <div id="footer-canvas">
-        <p>İletişim</p>
+        <p>iletişim</p>  <!-- web sitesi için iletişim bilgilerinin yer alacağı bölüm -->
     </div>
 
-    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button> <!--sayfa iinde alt kısımlara indikçe karşımıza çıkacak olan buton. Bu buton ile sayfanın en üst kısmına geçiş yapabiliriz -->
 
-    <script src="script.js"></script>
+    <script src="script.js"></script> <!-- javascript fonksiyonlarını kullanmak için html sayfasının Jscript sayfasına bağlandığı kısım -->
 </body>
 
 
